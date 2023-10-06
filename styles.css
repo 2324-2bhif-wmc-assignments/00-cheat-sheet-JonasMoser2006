@@ -1,0 +1,64 @@
+* {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+body{
+    background-color: darkgray;
+}
+hr{
+    height: 3px;
+    background-color: darkblue;
+}
+h1{
+    color: green;
+    text-align: center;
+    font-size: 45px;
+}
+.menu-bar{
+    text-align: center;
+}
+.text-is-weighted{
+    font-weight: bolder;
+}
+.center-tag{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: green;
+}
+.heading-div{
+    border: 5px outset darkblue;
+    background-color: lightblue;
+    text-align: center;
+}
+.menu-div{
+    height: 55px;
+    background-color: black;
+
+}
+.menu-bar-div {
+    height: 55px;
+    width: 100px;
+    background-color: black;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.current-menu{
+    height: 55px;
+    width: 100px;
+    background-color: yellowgreen;
+
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.menu-bar-text{
+    color: greenyellow;
+    text-decoration: none;
+}
+.current-menu-bar-text{
+    color:black;
+    text-decoration: none;
+}
