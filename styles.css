@@ -1,9 +1,13 @@
 * {
     font-family: Arial,Helvetica,sans-serif;
+
 }
 
 body{
     background-color: darkgray;
+}
+article{
+
 }
 hr{
     height: 3px;
@@ -26,6 +30,7 @@ h1{
 h2{
     text-align: center;
     color: green;
+    font-size: 30px;
 }
 .heading-div{
     border: 5px outset darkblue;
@@ -35,6 +40,9 @@ h2{
 .menu-div{
     height: 55px;
     background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
 
 }
 .menu-bar-div {
@@ -56,9 +64,29 @@ h2{
 }
 .menu-bar-text{
     color: greenyellow;
+    text-align: center;
     text-decoration: none;
 }
 .current-menu-bar-text{
     color:black;
     text-decoration: none;
 }
+.under-menu-div{
+    height: 40px;
+    background-color: #2A2A2A;
+    top: 55px;
+    position: sticky;
+}
+.under-menu-section{
+    height: 40px;
+    width: 100px;
+    background-color: #2A2A2A;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.under-menu-text{
+    color: white;
+    text-decoration: none;
+}
+
