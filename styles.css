@@ -18,6 +18,9 @@ h1{
     text-align: center;
     font-size: 45px;
 }
+.write-bold{
+    font-weight: bold;
+}
 .menu-bar{
     text-align: center;
 }

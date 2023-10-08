@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML</title>
   <link type="text/css" rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="menu-div">
@@ -30,15 +31,106 @@
         <br/>
         <a class="under-menu-text" href="#basics">basics</a>
     </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#elements">elements</a>
+    </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#attributes">attributes</a>
+    </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#heading">heading</a>
+    </div>
 </div>
 <article>
     <section id="basics">
         <h2>Basics</h2>
-        <h3>1. HTML Document</h3>
-        <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;</p>
-        <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
-        <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+        <section>
+            <h3>1. HTML Document</h3>
+            <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;</p>
+            <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
+            <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+        </section>
+        <section>
+            <h3>2. The &lt;!DOCTYPE&gt; Declaration</h3>
+            <p>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.</p>
+            <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+            <p>The &lt;!DOCTYPE&gt; declaration is not case sensitive.</p>
+        </section>
     </section>
+    <section id="elements">
+        <h2>HTML Elements</h2>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <h4>&lt;tagname&gt; Content goes here...&lt;/tagname&gt</h4>
+        <section>
+            <h3>1. Nested HTML Elements</h3>
+            <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+            <p>All HTML documents consist of nested HTML elements.</p>
+        </section>
+        <section>
+            <h3>2. HTML Headings</h3>
+            <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+            <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading</p>
+        </section>
+        <section>
+            <h3>3. HTML Paragraphs</h3>
+            <p>HTML paragraphs are defined with the &lt;p&gt; tag</p>
+        </section>
+        <section>
+            <h3>4. HTML Links</h3>
+            <p>HTML links are defined with the &lt;a&gt; tag</p>
+            <p>Write: href="test.html" to open a page</p>
+            <p>Attributes are used to provide additional information about HTML elements.</p>
+            <p>You will learn more about attributes in a later chapter.</p>
+        </section>
+        <section>
+            <h3>5. Never Skip the End Tag</h3>
+            <p>Some HTML elements will display correctly, even if you forget the end tag</p>
+            <p class="write-bold">However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+        </section>
+        <section>
+            <h3>6. Empty HTML Elements (void)</h3>
+            <p>HTML elements with no content are called empty elements.</p>
+            <p>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag.</p>
+        </section>
+        <section>
+            <h3>7. HTML is Not Case Sensitive</h3>
+            <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+            <p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document
+                types like XHTML.</p>
+        </section>
+    </section>
+    <section id="attributes">
+    <h2>Attributes</h2>
+        <section>
+            <p>The 'title' attribute defines some extra information about an element.</p>
+            <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element</p>
+            <h4>Example:</h4>
+            <p>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</p>
+        </section>
+        <section>
+            <h3>1. Always Use Lowercase Attributes</h3>
+            <p>The HTML standard does not require lowercase attribute names.</p>
+            <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.</p>
+            <p>However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.</p>
+        </section>
+        <section>
+            <h3>2. Single or Double Quotes?</h3>
+            <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+            <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes</p>
+        </section>
+    </section>
+    <section id="heading">
+        <h2>Heading</h2>
+        <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+        <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+        <section>
+            
+        </section>
+    </section>
+
 </article>
 </body>
 </html>
