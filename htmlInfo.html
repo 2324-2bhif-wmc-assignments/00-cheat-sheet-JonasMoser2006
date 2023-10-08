@@ -43,6 +43,26 @@
         <br/>
         <a class="under-menu-text" href="#heading">heading</a>
     </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#paragraphs">paragraphs</a>
+    </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#comments">comments</a>
+    </div>
+    <div class="under-menu-section">
+    <br/>
+    <a class="under-menu-text" href="#link">links</a>
+    </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#images">images</a>
+    </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#head">head</a>
+    </div>
 </div>
 <article>
     <section id="basics">
@@ -126,11 +146,180 @@
         <h2>Heading</h2>
         <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
         <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+        <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</p>
         <section>
-            
+            <h3>1. Headings Are Important</h3>
+            <p>Search engines use the headings to index the structure and content of your web pages.</p>
+            <p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+            <p>&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</p>
+        </section>
+        <section>
+            <h3>2. Bigger Headings</h3>
+            <p>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property.</p>
         </section>
     </section>
-
+    <section id="paragraphs">
+        <h2>Paragraphs</h2>
+        <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+        <p>The HTML <p> element defines a paragraph.</p>
+        <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <section>
+            <h3>1. HTML Display</h3>
+            <p>You cannot be sure how HTML will be displayed.</p>
+            <p>Large or small screens, and resized windows will create different results.</p>
+            <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+            <p>The browser will automatically remove any extra spaces and lines when the page is displayed</p>
+        </section>
+        <section>
+            <h3>2. HTML Horizontal Rules</h3>
+            <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+            <p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p>
+            <p>The &lt;hr&gt; tag is an empty tag, which means that it has no end tag.</p>
+        </section>
+        <section>
+            <h3>3. HTML Line Breaks</h3>
+            <p>The HTML &lt;br&gt; element defines a line break.</p>
+            <p>Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:</p>
+            <p>The &lt;br&gt; tag is an empty tag, which means that it has no end tag.</p>
+        </section>
+    </section>
+    <section id="comments">
+        <h2>Comments</h2>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+        <p>You can add comments to your HTML source by using the following syntax: &lt;!-- Write your comments here --&gt;</p>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+        <section>
+            <h3>1. Add Comments</h3>
+            <p>With comments you can place notifications and reminders in your HTML code</p>
+        </section>
+        <section>
+            <h3>2. Hide Content</h3>
+            <p>Comments can be used to hide content.</p>
+            <p>This can be helpful if you hide content temporarily</p>
+            <p>You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.</p>
+            <p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+        </section>
+    </section>
+    <section id="link">
+        <h2>Links</h2>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <p>HTML links are hyperlinks.</p>
+        <p>You can click on a link and jump to another document.</p>
+        <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+        <section>
+            <h3>1. Syntax</h3>
+            <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
+            <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+            <p>The link text is the part that will be visible to the reader.</p>
+            <p>Clicking on the link text, will send the reader to the specified URL address.</p>
+            <p>By default, links will appear as follows in all browsers:</p>
+            <ul>
+                <li><p>An unvisited link is underlined and blue<</p></li>
+                <li><p>A visited link is underlined and purple</p></li>
+                <li><p>An active link is underlined and red</p></li>
+            </ul>
+        </section>
+        <section>
+            <h3>2. The target Attribute</h3>
+            <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+            <p>The 'target' attribute specifies where to open the linked document.</p>
+            <p>The 'target' attribute can have one of the following values:</p>
+            <ul>
+                <li><p>'_self' - Default. Opens the document in the same window/tab as it was clicked</p></li>
+                <li><p>'_blank' - Opens the document in a new window or tab</p></li>
+                <li><p>'_parent' - Opens the document in the parent frame</p></li>
+                <li><p>'_top' - Opens the document in the full body of the window</p></li>
+            </ul>
+        </section>
+        <section>
+            <h3>3. Absolute URLs vs. Relative URLs</h3>
+            <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+            <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part)</p>
+        </section>
+        <section>
+            <h3>4. Link to an Email Address</h3>
+            <p>Use 'mailto:' inside the 'href' attribute to create a link that opens the user's email program (to let them send a new email)</p>
+        </section>
+        <section>
+            <h3>5. Button as a Link</h3>
+            <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+            <p>JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+        </section>
+        <section>
+            <h3>6. Link Titles</h3>
+            <p>The 'title' attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+        </section>
+    </section>
+    <section id="images">
+        <h2>Images</h2>
+        <p>Images can improve the design and the appearance of a web page.</p>
+        <section>
+            <h3>1. Syntax</h3>
+            <p>The HTML &lt;img&gt; tag is used to embed an image in a web page.</p>
+            <p>Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.</p>
+            <p>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</p>
+            <p>The &lt;img&gt; tag has two required attributes:</p>
+            <ul>
+                <li><p>src - Specifies the path to the image</p></li>
+                <li><p>alt - Specifies an alternate text for the image</p></li>
+            </ul>
+        </section>
+        <section>
+            <h3>2. The alt Attribute</h3>
+            <p>The required 'alt' attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+            <p>he value of the alt attribute should describe the image.</p>
+            <p>If a browser cannot find an image, it will display the value of the alt attribute:</p>
+        </section>
+        <section>
+            <h3>3. Images in Another Folder</h3>
+            <p>If you have your images in a sub-folder, you must include the folder name in the src attribute: &lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</p>
+        </section>
+        <section>
+            <h3>Images on Another Server/Website</h3>
+            <p>Some web sites point to an image on another server.</p>
+            <p>To point to an image on another server, you must specify an absolute (full) URL in the 'src' attribute: &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</p>
+        </section>
+    </section>
+    <section id="head">
+        <h2>Head Elements</h2>
+        <p>The HTML &lt;head&gt; element is a container for the following elements: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;.</p>
+        <section>
+            <h3>1. The HTML &lt;head&gt; Element</h3>
+            <p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</p>
+            <p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+            <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+        </section>
+        <section>
+            <h3>2. The HTML &lt;title&gt; Element</h3>
+            <p>The &lt;title&gt; element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</p>
+            <p>The &lt;title&gt; element is required in HTML documents!</p>
+            <p>The content of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+            <p>The &lt;title&gt; element:</p>
+            <ul>
+                <li><p>defines a title in the browser toolbar</p></li>
+                <li><p>provides a title for the page when it is added to favorites</p></li>
+                <li><p>displays a title for the page in search engine-results</p></li>
+            </ul>
+        </section>
+        <section>
+            <h3>3. The HTML &lt;meta&gt; Element</h3>
+            <p>The &lt;meta&gt; element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.</p>
+            <p>The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.</p>
+            <p class="write-bold">Examples:</p>
+            <p>Define the character set used:</p>
+            <p class="write-bold">&lt;meta charset="UTF-8"&gt;</p>
+            <p>Define keywords for search engines:</p>
+            <p class="write-bold">&lt;meta name="keywords" content="HTML, CSS"&gt;</p>
+            <p>Define a description of your web page:</p>
+            <p class="write-bold">&lt;meta name="description" content="Free Web tutorials"&gt;</p>
+            <p>Define the author of a page:</p>
+            <p class="write-bold">&lt;meta name="author" content="Jonas Moser"&gt;</p>
+            <p>Refresh document every 30 seconds:</p>
+            <p class="write-bold">&lt;meta http-equiv="refresh" content="30"&gt;</p>
+            <p>Setting the viewport to make your website look good on all devices:</p>
+            <p class="write-bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+        </section>
+    </section>
 </article>
 </body>
 </html>
