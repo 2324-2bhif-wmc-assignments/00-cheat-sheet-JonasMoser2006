@@ -1,13 +1,10 @@
 * {
     font-family: Arial,Helvetica,sans-serif;
-
 }
-
 body{
     background-color: darkgray;
 }
 article{
-
 }
 hr{
     height: 3px;
@@ -110,4 +107,3 @@ h2{
 .violet-color{
     color: violet;
 }
-

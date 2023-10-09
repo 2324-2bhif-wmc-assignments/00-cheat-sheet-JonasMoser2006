@@ -39,6 +39,26 @@
             <br/>
             <a class="under-menu-text" href="#backgrounds">backgrounds</a>
         </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#text">text</a>
+        </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#fonts">fonts</a>
+        </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#link">link</a>
+        </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#combinators">combinators</a>
+        </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#pseudo-class">pseudo class</a>
+        </div>
     </div>
     <article>
         <article id="=syntax">
@@ -152,8 +172,210 @@
                 <p>Showing the background image only once is also specified by the 'background-repeat' property</p>
             </section>
         </article>
-        <article id="">
-
+        <article id="text">
+            <section>
+                <h2>Text</h2>
+                <p>CSS has a lot of properties for formatting text.</p>
+            </section>
+            <section>
+                <h3>1. Text Color</h3>
+                <p>The 'color' property is used to set the color of the text. The color is specified by:</p>
+                <ul>
+                    <li><p>a color name - like "red"</p></li>
+                    <li><p>a HEX value - like "#ff0000"</p></li>
+                    <li><p>an RGB value - like "rgb(255,0,0)"</p></li>
+                </ul>
+                <p>The default text color for a page is defined in the body selector.</p>
+            </section>
+            <section>
+                <h3>2. Text Alignment</h3>
+                <p>The 'text-align' property is used to set the horizontal alignment of a text.</p>
+                <p>A text can be left or right aligned, centered, or justified.</p>
+                <p>When the 'text-align' property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).</p>
+                <p>The 'text-align-last' property specifies how to align the last line of a text.</p>
+                <p>The 'direction and unicode-bidi properties can be used to change the text direction of an element</p>
+                <p>The 'vertical-align' property sets the vertical alignment of an element.</p>
+            </section>
+            <section>
+                <h3>3. Text Decoration</h3>
+                <p>The 'text-decoration-line' property is used to add a decoration line to text.</p>
+                <p>You can combine more than one value, like overline and underline to display lines both over and under a text.</p>
+                <p>The 'text-decoration-color' property is used to set the color of the decoration line.</p>
+                <p>The text-decoration-style property is used to set the style of the decoration line.</p>
+                <p>The text-decoration-thickness property is used to set the thickness of the decoration line.</p>
+                <p>All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links</p>
+            </section>
+            <section>
+                <h3>4. Text Transformation</h3>
+                <p>The 'text-transform' property is used to specify uppercase and lowercase letters in a text.</p>
+                <p>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word.</p>
+            </section>
+        </article>
+        <article id="fonts">
+            <section>
+                <h2>Fonts</h2>
+                <p>Choosing the right font for your website is important!</p>
+            </section>
+            <section>
+                <h3>1. Difference Between Serif and Sans-serif Fonts</h3>
+                <p>On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p>
+                <ul>
+                    <li><p>serif: fine lines at the ends of each letter</p></li>
+                    <li><p>sans-serif: Fonts without lines</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>2. font-family </h3>
+                <p>In CSS, we use the font-family property to specify the font of a text.</p>
+                <p>If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p>
+                <p>
+                    The 'font-family' property should hold several font names as a "fallback" system, to ensure maximum
+                    compatibility between browsers/operating systems. Start with the font you want, and end with a generic
+                    family (to let the browser pick a similar font in the generic family, if no other fonts are available).
+                    The font names should be separated with comma.
+                </p>
+            </section>
+            <section>
+                <h3>3. Font Style</h3>
+                <p>The font-style property is mostly used to specify italic text.</p>
+                <p>This property has three values:</p>
+                <ul>
+                    <li><p>normal - The text is shown normally</p></li>
+                    <li><p>italic - The text is shown in italics</p></li>
+                    <li><p>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</p></li>
+                </ul>
+                <p>The 'font-weight' property specifies the weight of a font.</p>
+                <p>The 'font-variant' property specifies whether or not a text should be displayed in a small-caps font.</p>
+                <p>
+                    In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted
+                    uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+                </p>
+            </section>
+            <section>
+                <h3>4. Font Size</h3>
+                <p>The 'font-size' property sets the size of the text.</p>
+                <p>
+                    Being able to manage the text size is important in web design.
+                    However, you should not use font size adjustments to make
+                    paragraphs look like headings, or headings look like paragraphs.
+                </p>
+                <p>Always use the proper HTML tags, like &lt;h1&gt; - &lt;h6&gt; for headings and &lt;p&gt; for paragraphs.</p>
+                <p>The font-size value can be an absolute, or relative size.</p>
+                <p>Absolute size:</p>
+                <ul>
+                    <li><p>Sets the text to a specified size.</p></li>
+                    <li><p>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</p></li>
+                    <li><p>Absolute size is useful when the physical size of the output is known</p></li>
+                </ul>
+                <p>Relative size:</p>
+                <ul>
+                    <li><p>Sets the size relative to surrounding elements.</p></li>
+                    <li><p>Allows a user to change the text size in browsers.</p></li>
+                </ul>
+                <p>If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</p>
+                <p class="write-bold">Set Font Size With Pixels:</p>
+                <p>Setting the text size with pixels gives you full control over the text size.</p>
+                <p class="write-bold">Set Font Size With Em</p>
+                <p>To allow users to resize the text (in the browser menu), many developers use em instead of pixels.</p>
+                <p>1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.</p>
+                <p>The size can be calculated from pixels to em using this formula: pixels/16=em</p>
+                <p>The text size can be set with a vw unit, which means the "viewport width".</p>
+                <p>That way the text size will follow the size of the browser window.</p>
+            </section>
+            <section>
+               <h3>5. font-weight</h3>
+                <p>the 'font-weight' property sets how thick or thin characters in text should be displayed.</p>
+            </section>
+        </article>
+        <article id="link">
+            <section>
+                <h2>Link</h2>
+                <p>Links can be styled with any CSS property (e.g. 'color', 'font-family', 'background', etc.).</p>
+                <p>In addition, links can be styled differently depending on what state they are in.</p>
+                <p>The four links states are:</p>
+                <ul>
+                    <li><p>'a:link' - a normal, unvisited link</p></li>
+                    <li><p>'a:visited' - a link the user has visited</p></li>
+                    <li><p>'a:hover' - a link when the user mouses over it</p></li>
+                    <li><p>'a:active' - a link the moment it is clicked</p></li>
+                </ul>
+                <p>When setting the style for several link states, there are some order rules:</p>
+                <ul>
+                    <li><p>a:hover MUST come after a:link and a:visited</p></li>
+                    <li><p>a:active MUST come after a:hover</p></li>
+                </ul>
+            </section>
+        </article>
+        <article id="combinators">
+            <section>
+                <h2>Combinators</h2>
+                <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+                <p>There are four different combinators in CSS:</p>
+                <ul>
+                    <li><p>descendant selector (space)</p></li>
+                    <li><p>child selector (>)</p></li>
+                    <li><p>adjacent sibling selector (+)</p></li>
+                    <li><p>general sibling selector (~)</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>1. Descendant Selector</h3>
+                <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+            </section>
+            <section>
+                <h3>2. Child Selector (>)</h3>
+                <p>The child selector selects all elements that are the children of a specified element.</p>
+            </section>
+            <section>
+                <h3>3. Adjacent Sibling Selector (+)</h3>
+                 <p>The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
+                <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+            </section>
+            <section>
+                <h3>General Sibling Selector (~)</h3>
+                <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+            </section>
+        </article>
+        <article id="pseudo-class">
+            <section>
+                <h2>Pseudo-Class</h2>
+                <p>A pseudo-class is used to define a special state of an element.</p>
+                <p>For example, it can be used to:</p>
+                <ul>
+                    <li><p>Style an element when a user mouses over it</p></li>
+                    <li><p>Style visited and unvisited links differently</p></li>
+                    <li><p>Style an element when it gets focus</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>1. Syntax</h3>
+                <pre>
+                    selector:pseudo-class {
+                        property: value;
+                    }
+                </pre>
+            </section>
+            <section>
+                <h3>2. Anchor Pseudo-classes</h3>
+                <p>Links can be displayed in different ways.</p>
+                <p>
+                    'a:hover' MUST come after 'a:link' and 'a:visited' in the CSS definition in order to be effective!
+                    'a:active' MUST come after 'a:hover' in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+                </p>
+            </section>
+            <section>
+                <h3>Hover on</h3>
+                <p>An example of using the :hover pseudo-class on a &lt;div&gt; element:</p>
+                <pre>
+                    div:hover {
+                        background-color: blue;
+                    }
+                </pre>
+            </section>
+            <section>
+                <h3>The :first-child Pseudo-class</h3>
+                <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+            </section>
         </article>
     </article>
 </body>
