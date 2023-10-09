@@ -35,6 +35,10 @@
             <br/>
             <a class="under-menu-text" href="#colors">colors</a>
         </div>
+        <div class="under-menu-section">
+            <br/>
+            <a class="under-menu-text" href="#backgrounds">backgrounds</a>
+        </div>
     </div>
     <article>
         <article id="=syntax">
@@ -80,6 +84,75 @@
             </section>
         </article>
         <article id="colors">
+            <section>
+                <h2>Colors</h2>
+                <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+            </section>
+            <section>
+                <h3>1. Color Names</h3>
+                <p>In CSS, a color can be specified by using a predefined color name:</p>
+                <ul>
+                    <li><p class="tomato-color">Tomato</p></li>
+                    <li><p class="orange-color">Orange</p></li>
+                    <li><p class="blue-color">DodgerBlue</p></li>
+                    <li><p class="green-color">MediumSeaGreen</p></li>
+                    <li><p class="slate-blue-color">SlateBlue</p></li>
+                    <li><p class="violet-color">Violet</p></li>
+                </ul>
+                <p>CSS/HTML support 140 standard color names.</p>
+            </section>
+            <section>
+                <h3>2. HEX Colors</h3>
+                <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+                <h4>2.1 HEX Value</h4>
+                <p>In CSS, a color can be specified using a hexadecimal value in the form:</p>
+                <p class="write-bold">#rrggbb</p>
+                <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+                <p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+                <p>To display black, set all values to 00, like this: #000000.</p>
+                <p>To display white, set all values to ff, like this: #ffffff.  </p>
+                <h4>2.2 3 Digit HEX Value</h4>
+                <p>Sometimes you will see a 3-digit hex code in the CSS source.</p>
+                <p>The 3-digit hex code is a shorthand for some 6-digit hex codes.</p>
+                <p>The 3-digit hex code has the following form:</p>
+                <p class="write-bold">#rgb</p>
+                <p>Where r, g, and b represent the red, green, and blue components with values between 0 and f.</p>
+                <p>The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component. So, if we have #ff00cc, it can be written like this: #f0c.</p>
+            </section>
+        </article>
+        <article id="backgrounds">
+            <section>
+                <h2>Background</h2>
+                <p>The CSS background properties are used to add background effects for elements.</p>
+            </section>
+            <section>
+                <h3>1. background-color</h3>
+                <p>The 'background-color' property specifies the background color of an element.</p>
+                <p>With CSS, a color is most often specified by:</p>
+                <ul>
+                    <li><p>a valid color name - like "red"</p></li>
+                    <li><p>a HEX value - like "#ff0000"</p></li>
+                    <li><p>an RGB value - like "rgb(255,0,0)"</p></li>
+                </ul>
+            </section>
+            <section>
+                <h3>2. background-image</h3>
+                <p>The 'background-image' property specifies an image to use as the background of an element.</p>
+                <p>By default, the image is repeated so it covers the entire element.</p>
+                <p>The background image can also be set for specific elements, like the &lt;p&gt; element</p>
+            </section>
+            <section>
+                <h3>3. Repeat Horizontally or Vertically</h3>
+                <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+                <p>Some images should be repeated only horizontally or vertically, or they will look strange</p>
+                <p>If the image above is repeated only horizontally '(background-repeat: repeat-x;)', the background will look better</p>
+            </section>
+            <section>
+                <h3>4. Fixed Position</h3>
+                <p>Showing the background image only once is also specified by the 'background-repeat' property</p>
+            </section>
+        </article>
+        <article id="">
 
         </article>
     </article>
