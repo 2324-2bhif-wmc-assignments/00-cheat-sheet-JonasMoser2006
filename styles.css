@@ -54,6 +54,9 @@ h2{
     position: relative;
     text-align: center;
 }
+.menu-bar-div:hover{
+    background-color: #202121;
+}
 .current-menu{
     height: 55px;
     width: 100px;
@@ -107,3 +110,5 @@ h2{
 .violet-color{
     color: violet;
 }
+
+
