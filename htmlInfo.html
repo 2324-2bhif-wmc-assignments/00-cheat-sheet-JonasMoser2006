@@ -63,10 +63,14 @@
         <br/>
         <a class="under-menu-text" href="#head">head</a>
     </div>
+    <div class="under-menu-section">
+        <br/>
+        <a class="under-menu-text" href="#lists-and-tables">Lists, Tables</a>
+    </div>
 </div>
-<article>
     <section id="basics">
         <h2>Basics</h2>
+        <div></div>
         <section>
             <h3>1. HTML Document</h3>
             <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;</p>
@@ -83,7 +87,7 @@
     <section id="elements">
         <h2>HTML Elements</h2>
         <p >The HTML element is everything from the start tag to the end tag:</p>
-        <h4>&lt;tagname&gt; Content goes here...&lt;/tagname&gt</h4>
+        <h4>&lt;tagname&gt; Content goes here...&lt;/tagname&gt;</h4>
         <section>
             <h3>1. Nested HTML Elements</h3>
             <p>HTML elements can be nested (this means that elements can contain other elements).</p>
@@ -214,7 +218,7 @@
             <p>Clicking on the link text, will send the reader to the specified URL address.</p>
             <p>By default, links will appear as follows in all browsers:</p>
             <ul>
-                <li><p>An unvisited link is underlined and blue<</p></li>
+                <li><p>An unvisited link is underlined and blue</p></li>
                 <li><p>A visited link is underlined and purple</p></li>
                 <li><p>An active link is underlined and red</p></li>
             </ul>
@@ -320,6 +324,79 @@
             <p class="write-bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
         </section>
     </section>
-</article>
+    <section id="lists-and-tables">
+        <h2>Lists and Tables</h2>
+        <table class="center-table">
+            <tr>
+                <th>List</th>
+                <th>Tags</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>ordered List</td>
+                <td>&lt;ol&gt; &lt;/ol&gt;</td>
+                <td>
+                    <ol>
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                    </ol>
+                    <ol class="list-font-upperroman">
+                        <li>first item</li>
+                        <li>second item</li>
+                        <li>third item</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>unorderd list</td>
+                <td>&lt;ul&gt; &lt;/ul&gt;</td>
+                <td>
+                    <ul>
+                        <li>first point</li>
+                        <li>second point</li>
+                        <li>third point</li>
+                    </ul>
+                    <ul class="list-bullet-square">
+                        <li>first point</li>
+                        <li>second point</li>
+                        <li>third point</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <section>
+            <h3>Syntax Tables</h3>
+            <p>1. start tag for: </p>
+            <ul>
+                <li>a table (&lt;table&gt;)</li>
+                <li>a table row (&lt;tr&gt;)</li>
+                <li>a table header (&lt;thead&gt;)</li>
+                <li>a table header cell (&lt;th&gt;)</li>
+                <li>a table body (&lt;tbody&gt;)</li>
+                <li>a table cell (&lt;td&gt;)</li>
+                <li>a table footer (&lt;tfood&gt;)</li>
+                <li>a table footer cell (&lt;d&gt;)</li>
+            </ul>
+            <p>
+                <a class="menu-bar-text" href="cssInfo.html#lists-and-tables">see css for tables</a>
+            </p>
+        </section>
+        <section>
+            <h3>Syntax Lists</h3>
+            <p>1. Start Tags for:</p>
+            <ul>
+                <li>an ordered list (&lt;ol&gt;)</li>
+                <li>an unordered list (&lt;ul&gt;)</li>
+                <li>a description list (&lt;dl&gt;)</li>
+                <li>a list item (&lt;li&gt;)</li>
+                <li>a description term (&lt;dt&gt;)</li>
+                <li>a description data (&lt;dd&gt;)</li>
+            </ul>
+            <p>
+                <a class="menu-bar-text" href="cssInfo.html#lists-and-tables">see css for lists</a>
+            </p>
+        </section>
+    </section>
 </body>
 </html>
