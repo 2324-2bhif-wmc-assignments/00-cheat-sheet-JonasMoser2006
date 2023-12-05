@@ -138,3 +138,35 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
+.img-skiier-animation{
+    position: relative;
+    left: 400px;
+    top: 100px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {left:280px; top:-350px;}
+    /*6%   {left: 300px; top: -325px}
+    12%  {left:420px; top: -300px}
+    18%  {left:485px; }*/
+    25%  {left:550px; top:-250px;}
+    /*31%  {}
+    37%  {transform: rotate(-30deg); left:670px; top:-220px;}
+    43%  {}*/
+    50%  {transform: rotate(-30deg); left: 850px; top: -200px}
+   /* 56%  {}
+    62%  {transform: rotate(-30deg); left: 960px; top: -185px}
+    68%  {}*/
+    75%  {transform: rotate(-30deg);left:1000px; top:-170px;}
+   /* 81%  {}
+    87%  {transform: rotate(-30deg); left: 1075px; top: -160px;}
+    93%  {}*/
+    100% {transform: rotate(-30deg);left:1150px; top:-155px;}
+}
+.position-skier{
+    bottom: 45%;
+    right: 80%;
+}
