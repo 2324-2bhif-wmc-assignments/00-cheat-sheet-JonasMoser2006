@@ -323,3 +323,21 @@ td {
     color:white;
     font-weight:bold;
 }
+
+.carousel-div{
+    display: flex;
+    justify-content: center;
+}
+.test{
+    align-content: center;
+    align-items: center;
+
+}
+
+img.d-block {
+    width: 20rem;
+}
+
+.laurin{
+    display: inline;
+}
