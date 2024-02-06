@@ -339,5 +339,18 @@ img.d-block {
 }
 
 .laurin{
-    display: inline;
+    margin-top: 5rem;
+    float: left;
+    margin-left: 2rem;
 }
+.laurin2 {
+    margin-top: 5rem;
+    float: left;
+    margin-left: 9rem;
+}
+
+.card-text{
+    font-weight: bold;
+    color: hotpink;
+}
+
