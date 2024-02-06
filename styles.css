@@ -56,7 +56,14 @@ h2{
     top: 0;
     width: 100%;
 }
-
+.boot-strap-menu-div{
+    height: 55px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-top: 0.5rem;
+}
 .menu-bar-div {
     height: 55px;
     width: 100px;
@@ -84,12 +91,21 @@ h2{
     text-align: center;
     text-decoration: none;
 }
-
+.boot-strap-menu-bar-text{
+    color: greenyellow;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 0.7rem;
+}
 .current-menu-bar-text{
     color:black;
     text-decoration: none;
 }
-
+.current-boot-strap-menu-bar-text{
+    color:black;
+    text-decoration: none;
+    padding-top: 0.7rem;
+}
 .under-menu-div{
     height: 40px;
     background-color: #2A2A2A;
