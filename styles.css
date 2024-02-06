@@ -1,51 +1,62 @@
 * {
     font-family: Arial,Helvetica,sans-serif;
 }
+
 body{
     background-color: black;
     color: white;
 }
+
 article{
 }
+
 hr{
     height: 3px;
     background-color: darkblue;
 }
+
 h1{
     color: green;
     text-align: center;
     font-size: 45px;
 }
+
 .write-bold{
     font-weight: bold;
 }
+
 .menu-bar{
     text-align: center;
 }
+
 .text-is-weighted{
     font-weight: bolder;
 }
+
 .center-tag{
     text-align: center;
 }
+
 h2{
     text-align: center;
     color: green;
     font-size: 30px;
 }
+
 .heading-div{
     border: 5px outset darkblue;
     background-color: lightblue;
     text-align: center;
 }
+
 .menu-div{
     height: 55px;
     background-color: black;
     position: sticky;
     top: 0;
     width: 100%;
-
 }
+
 .menu-bar-div {
     height: 55px;
     width: 100px;
@@ -54,9 +65,11 @@ h2{
     position: relative;
     text-align: center;
 }
+
 .menu-bar-div:hover{
     background-color: #202121;
 }
+
 .current-menu{
     height: 55px;
     width: 100px;
@@ -65,21 +78,25 @@ h2{
     position: relative;
     text-align: center;
 }
+
 .menu-bar-text{
     color: greenyellow;
     text-align: center;
     text-decoration: none;
 }
+
 .current-menu-bar-text{
     color:black;
     text-decoration: none;
 }
+
 .under-menu-div{
     height: 40px;
     background-color: #2A2A2A;
     top: 55px;
     position: sticky;
 }
+
 .under-menu-section{
     height: 40px;
     width: 100px;
@@ -88,84 +105,89 @@ h2{
     position: relative;
     text-align: center;
 }
+
 .under-menu-text{
     color: white;
     text-decoration: none;
 }
+
 .tomato-color{
     color: tomato;
 }
+
 .orange-color{
     color: orange;
 }
+
 .blue-color{
     color: dodgerblue;
 }
+
 .green-color{
     color: mediumseagreen;
 }
+
 .slate-blue-color{
     color: slateblue;
 }
+
 .violet-color{
     color: violet;
 }
+
 .yellow-color{
     color: yellowgreen;
     text-decoration: none;
 }
+
 .h2-to-p{
     font-size: 16px;
 }
+
 table,
 th,
 td {
     border: 1px solid;
     border-spacing: 0;
 }
+
 .center-table{
     margin-left: auto;
     margin-right: auto;
 }
+
 .list-font-upperroman{
     list-style-type: upper-roman;
 }
+
 .list-bullet-square{
     list-style-type: square;
 }
+
 .img-center{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .img-skiier-animation{
     position: relative;
     left: 400px;
     top: 100px;
-    animation-name: example;
+    animation-name: ski-movement;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    animation-direction: normal;
 }
 
-@keyframes example {
-    0%   {left:280px; top:-350px;}
-    /*6%   {left: 300px; top: -325px}
-    12%  {left:420px; top: -300px}
-    18%  {left:485px; }*/
-    25%  {left:550px; top:-250px;}
-    /*31%  {}
-    37%  {transform: rotate(-30deg); left:670px; top:-220px;}
-    43%  {}*/
-    50%  {transform: rotate(-30deg); left: 850px; top: -200px}
-   /* 56%  {}
-    62%  {transform: rotate(-30deg); left: 960px; top: -185px}
-    68%  {}*/
-    75%  {transform: rotate(-30deg);left:1000px; top:-170px;}
-   /* 81%  {}
-    87%  {transform: rotate(-30deg); left: 1075px; top: -160px;}
-    93%  {}*/
-    100% {transform: rotate(-30deg);left:1150px; top:-155px;}
+@keyframes ski-movement {
+    0%   {left:17.5rem; top:-21.875rem;}
+    25%  {left:31.063rem; top:-15.625rem;}
+    50%  {transform: rotate(-30deg); left: 44.625rem; top: -12.5rem}
+    75%  {transform: rotate(-30deg);left:58.188rem; top:-10.625rem;}
+    100% {transform: rotate(-30deg);left:71.875rem; top:-9.688rem;}
 }
+
 .position-skier{
     bottom: 45%;
     right: 80%;
@@ -178,4 +200,110 @@ td {
     text-shadow: 0 0 5px #000;
 }
 
-.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+.snowflake,.snowflake .inner{
+    animation-iteration-count:infinite;
+    animation-play-state:running
+}
+
+@keyframes snowflakes-fall{
+    0%{transform:translateY(0)}
+    100%{transform:translateY(110vh)}
+}
+
+@keyframes snowflakes-shake {
+    0%,100%{transform:translateX(0)}
+    50%{transform:translateX(80px)}
+}
+.snowflake{
+    position:fixed;top: -10%;
+    z-index:9999;
+    -webkit-user-select:none;
+    user-select:none;
+    cursor:default;
+    animation-name:snowflakes-shake;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out
+}
+.snowflake .inner{
+    animation-duration:10s;
+    animation-name:snowflakes-fall;
+    animation-timing-function:linear
+}
+.snowflake:nth-of-type(0){
+    left:1%;animation-delay:0s
+}
+.snowflake:nth-of-type(0) .inner{
+    animation-delay:0s
+}
+.snowflake:first-of-type{
+    left:10%;animation-delay:1s
+}
+.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{
+    animation-delay:1s
+}
+.snowflake:nth-of-type(2){
+    left:20%;
+    animation-delay:.5s
+}
+.snowflake:nth-of-type(2)
+.inner,.snowflake:nth-of-type(6) .inner{
+    animation-delay:6s
+}.snowflake:nth-of-type(3) {
+     left:30%;
+     animation-delay:2s
+ }
+.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{
+    animation-delay:4s
+}
+.snowflake:nth-of-type(4){
+    left:40%;animation-delay:2s
+}
+.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{
+    animation-delay:2s
+}
+.snowflake:nth-of-type(5){
+    left:50%;animation-delay:3s
+}
+.snowflake:nth-of-type(5) .inner{
+    animation-delay:8s
+}
+.snowflake:nth-of-type(6){
+    left:60%;
+    animation-delay:2s
+}
+.snowflake:nth-of-type(7){
+    left:70%;
+    animation-delay:1s
+}
+.snowflake:nth-of-type(7) .inner{
+    animation-delay:2.5s
+}
+.snowflake:nth-of-type(8){
+    left:80%;
+    animation-delay:0s
+}
+.snowflake:nth-of-type(9){
+    left:90%;
+    animation-delay:1.5s
+}
+.snowflake:nth-of-type(9) .inner{
+    animation-delay:3s
+}
+.snowflake:nth-of-type(10){
+    left:25%;
+    animation-delay:0s
+}
+.snowflake:nth-of-type(11){
+    left:65%;
+    animation-delay:2.5s
+}
+
+.under-menu-css-info-text{
+    text-decoration: none;
+    color: white;
+}
+
+.best-of-laurin{
+    color:white;
+    font-weight:bold;
+}
